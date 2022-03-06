@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pasteleria Obregón</title>
+</head>
+<body>
+          <nav>
+            <ul id="ulNav">
+              <li id="liNav"><a id="textoNav" href="index.html" id="navbar">Inicio</a></li>
+              <li id="liNav"><a id="textoNav" href="pasteles.html" id="navbar">Pasteles</a></li>
+              <li id="liNav"><a id="textoNav" href="decoracion.html" id="navbar">Decoración de pastel</a></li>
+              <li id="liNav"><a id="textoNav" href="pedidos.html" id="navbar">Realizar Pedido</a></li>
+              <li id="liNav"><a id="textoNav" href="pedidoRegistrado.html" id="navbar">Pedidos Registrados</a></li>
+              <li id="liNav"><a id="textoNav" href="inventario.html" id="navbar">Inventario</a></li>
+              <li id="liNav"><a id="textoNav" href="contactanos.html" id="navbar">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <img id="logo" src="./assets/img/Logo Pasteleria.png" alt="Logo Pasteleria" width="200px">
+        <h1 id="titulos"> Pedidos  </h1>
+        <!-- Formulario -->
+        <form action="pedidos.html">
+          <!-- Datos cliente-->
+          <label for="  ">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+          <br>
+          <label for="Telefono">Teléfono</label>
+          <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+          <br>
+          <label for="Email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+          <br>
+          <label for="Descripcion">Descripción general del pastel</label>
+          <textarea name="descripcion" id="descripcion" cols="40" rows="10"></textarea>
+          <br>
+          <!-- Tipo de sabor-->
+          <p>Seleccione los sabores</p>
+            <label for="Vainilla">Vainilla</label>
+            <input type="radio" name="Vainilla" id="Vainilla" value="Vainilla">
+            <label for="Fresa">Fresa</label>
+            <input type="radio" name="Fresa" id="Fresa" value="Fresa">
+            <label for="Chocolate">Chocolate</label>
+            <input type="radio" name="Chocolate" id="Chocolate" value="Chocolate">
+            <label for="Red Velvet">Red Velvet</label>
+            <input type="radio" name="Red Velvet" id="Red Velvet" value="Red Velvet">
+            <label for="3 Leches">3 Leches</label>
+            <input type="radio" name="3 Leches" id="3 Leches" value="3 Leches">
+          <br>
+          <!-- Tipo de adorno-->
+          <p>Seleccione los adornos</p>
+            <label for="Letrero HB">Letrero HB</label>
+            <input type="radio" name="Letrero HB" id="Letrero HB" value="Letrero HB">
+            <label for="Flores">Flores</label>
+            <input type="radio" name="Flores" id="Flores" value="Flores">
+            <label for="Astronauta">Astronauta</label>
+            <input type="radio" name="Astronauta" id="Astronauta" value="Astronauta">
+            <label for="Unicornio">Unicornio</label>
+            <input type="radio" name="Unicornio" id="Unicornio" value="Unicornio">
+            <label for="Princesa Tara">Princesa Tara</label>
+            <input type="radio" name="Velas de números" id="Velas de números" value="Velas de números">
+          <br>
+          <!-- Tipo de entrega-->
+          <p>Entrega a domicilio o en sucursal</p>
+          <label for="Sabores">Domicilio</label>
+          <input type="radio" name="domicilio" id="domicilio" value="domicilio">
+          <br>
+          <label for="Sabores">Sucursal</label>
+          <input type="radio" name="sucursal" id="sucursal" value="sucursal">
+          <br>
+          <!-- Botones-->
+          <input type="reset">
+          <input type="submit">
+
+        </form>
+        
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pasteleria Obregón</title>
+</head>
+<body>
+    <nav>
+      <ul id="ulNav">
+        <li id="liNav"><a id="textoNav" href="index.html" id="navbar">Inicio</a></li>
+        <li id="liNav"><a id="textoNav" href="pasteles.html" id="navbar">Pasteles</a></li>
+        <li id="liNav"><a id="textoNav" href="decoracion.html" id="navbar">Decoración de pastel</a></li>
+        <li id="liNav"><a id="textoNav" href="pedidos.html" id="navbar">Realizar Pedido</a></li>
+        <li id="liNav"><a id="textoNav" href="pedidoRegistrado.html" id="navbar">Pedidos Registrados</a></li>
+        <li id="liNav"><a id="textoNav" href="inventario.html" id="navbar">Inventario</a></li>
+        <li id="liNav"><a id="textoNav" href="contactanos.html" id="navbar">Contáctanos</a></li>
+    </ul>
+    </nav>
+    <img id="logo" src="./assets/img/Logo Pasteleria.png" alt="Logo Pasteleria" width="200px">
+    <h1 id="titulos">Bienvenidos a Pastelerias Obregón</h1>
+    <div>
+          <!--Carrousel Slider !-->
+          <div class="w3-content w3-section">
+          <img class="mySlides" id="carrousel" src="./assets/img/Pastel1.jpg" style="width:70%">
+          <img class="mySlides" id="carrousel" src="./assets/img/Pastel2.jpg" style="width:70%">
+         <img class="mySlides" id="carrousel" src="./assets/img/Pastel3.jpg" style="width:70%"> 
+    </div>
+    <!-- Función del slider !-->
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 6000); // Change image every 2 seconds
+        }
+        </script>
+    <!-- Titulo acerca de nosotros !-->
+<div>
+    <h1 id="titulos">Acerca de nosotros</h1>
+  </div>
+  <!-- Texto Acerca de Nosotros!-->
+  <div>
+    <div>
+      <p id="parrafos">Somos una empresa 100% dedicada a nuestros clientes, pues nos esforzamos por ofrecer los mejores productos en el área de repostería para que cada persona tenga un momento dulce e inolvidable.</p>
+    </div>
+  </div>
+</body>
+</html>
